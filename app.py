@@ -6,11 +6,12 @@ import cv2
 import mediapipe as mp
 import threading
 import time
+import requir
 
 app = Flask(__name__)
 
 # Configure Gemini API Key
-genai.configure(api_key="API_KEY")
+genai.configure(api_key=requir.API_KEY)
 
 # Initialize Text-to-Speech engine
 engine = pyttsx3.init()
