@@ -68,13 +68,13 @@ def detect_hand_raise():
                 if all(tip < wrist_y for tip in finger_tips_y):
                     hand_raised = True
                     print("Hand raised detected!")
-                    time.sleep(1)  # Prevent continuous detection
+                    cv2.waitKey(60)
                 else:
                     hand_raised = False
             
             cv2.imshow('Hand Gesture Detection', img)
             
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(30) & 0xFF == ord('q'):
                 break
 
     cap.release()
