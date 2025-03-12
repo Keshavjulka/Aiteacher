@@ -10,7 +10,7 @@ import time
 app = Flask(__name__)
 
 # Configure Gemini API Key
-genai.configure(api_key="AIzaSyC9M3kgtjIPHdP0nS5tG8IKpgiKInfaGDY")
+genai.configure(api_key="API_KEY")
 
 # Initialize Text-to-Speech engine
 engine = pyttsx3.init()
